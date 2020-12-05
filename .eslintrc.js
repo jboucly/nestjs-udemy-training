@@ -10,6 +10,8 @@ module.exports = {
     },
     rules: {
         // @typescript-eslint
+        '@typescript-eslint/no-explicit-any': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/member-ordering': ['error'],
         '@typescript-eslint/no-this-alias': [
             'error',
@@ -18,7 +20,6 @@ module.exports = {
                 allowedNames: ['that'],
             },
         ],
-        '@typescript-eslint/no-explicit-any': 'off',
         '@typescript-eslint/indent': 'off',
         '@typescript-eslint/no-unused-expressions': 'off',
         '@typescript-eslint/no-var-requires': 'off',
