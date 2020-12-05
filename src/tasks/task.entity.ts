@@ -6,12 +6,12 @@ export class Task extends BaseEntity {
     @PrimaryGeneratedColumn()
     public id: number;
 
-    @Column({})
+    @Column()
     public title: string;
 
-    @Column({})
+    @Column()
     public description: string;
 
-    @Column({})
+    @Column()
     public status: TasksStatus;
 }
