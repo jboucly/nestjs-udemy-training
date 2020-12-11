@@ -10,7 +10,7 @@ export class UserRepository extends Repository<User> {
         const { username, password } = dto;
 
         const salt = await genSalt();
-        const user = new User();
+        const user = this.create();
         user.username = username;
         user.salt = salt;
         user.password = await this._hashPassword(password, user.salt);
